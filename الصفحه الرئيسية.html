@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الصفحة الرئيسية</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* لون الخلفية الافتراضي */
+    color: #333; /* لون النص الافتراضي */
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+  /* وضع الصباح */
+  @media (prefers-color-scheme: light) {
+    body {
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+    }
+  }
+
+  /* وضع الليلي */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #222;
+      color: #fff;
+    }
+    header {
+      background-color: #444;
+      color: #fff;
+    }
+  }
+
+  /* لون الخلفية في وضع الليلي */
+  .dark-mode {
+    background-color: #000;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>sara crafts </h1>
+</header>
+
+<main>
+  <div>
+    <a href="https://ibb.co/yh7QWXH"><img src="https://i.ibb.co/VTf9Zz6/Screenshot.jpg" alt="شعار الشركة"></a>
+  </div>
+  <p>أهلاً بكم في الصفحة الرئيسية</p>
+  <button onclick="toggleMode()">تبديل الوضع</button>
+</main>
+
+<script>
+  function toggleMode() {
+    var body = document.body;
+    body.classList.toggle("dark-mode");
+  }
+</script>
+
+</body>
+</html>

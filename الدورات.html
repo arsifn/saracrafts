@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كورس متكامل</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    direction: rtl;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  h1 {
+    margin: 0;
+    padding: 10px 0;
+  }
+  main {
+    padding: 20px;
+  }
+  .course {
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .course img {
+    width: 100%;
+    height: auto;
+  }
+  .course-info {
+    padding: 20px;
+    text-align: right;
+  }
+  .course-info h2 {
+    margin-top: 0;
+  }
+  .course-info p {
+    margin-bottom: 10px;
+  }
+  .register-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .register-form label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+  .register-form input[type="text"],
+  .register-form input[type="email"],
+  .register-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .register-form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .register-form input[type="submit"]:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>دورات تدريبية </h1>
+  </header>
+
+  <main>
+    <div class="course">
+      <img id="course-image" src="https://i.ibb.co/W26g5fb/Screenshot.jpg" alt="صورة الكورس">
+      <div class="course-info">
+        <h2 id="دورات تدريبية"> دورات تشمل </h2>
+       </p>
+        <p id="course-price">السعر: $175</p>
+      </div>
+    </div>
+
+    <div class="register-form">
+      <h2>التسجيل في الدورة</h2>
+      <form action="#" method="post">
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="course">اختر الدورة:</label>
+        <select id="course" name="course" onchange="changeCourse()">
+          <option value="course1">النحت  </option>
+          <option value="course2"> التطريز</option>
+          <option value="course3">الرسم</option>
+        </select>
+      
+
+        <a href="mailto:sarasara24872007@gmail.com?subject=تسجيل في الكورس&body=الاسم: [الاسم الذي أدخله المستخدم]%0D%0Aالبريد الإلكتروني: [البريد الذي أدخله المستخدم]%0D%0Aالكورس: [الكورس الذي اختاره المستخدم]">
+          <input type="submit" value="تسجيل">
+        </a>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
